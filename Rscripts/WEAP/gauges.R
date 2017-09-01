@@ -1,14 +1,6 @@
 rm(list=ls())
 gc()
 
-# set working directory to the location of the required files
-setwd("C:/Users/davebetts/Dropbox/PhD/WEAP/stream gauges/ForCalibration")
-setwd("C:/Users/davebetts/Dropbox/PhD/WEAP/stream gauges")
-setwd("C:/Users/Sarah/Documents/Dropbox/PhD/WEAP/stream gauges")
-setwd("C:/Users/Sarah/Documents/Dropbox/PhD/WEAP/Data/Data_Processed/stream gauges")
-setwd("C:/Users/davebetts/Dropbox/PhD/WEAP/Data/Data_Processed/stream gauges")
-dir()
-
 
 ############################################################################################
 ###                                                                                      ###
@@ -159,7 +151,7 @@ write.csv(OutputNodesDates, "WEAP85to05.csv", row.names = FALSE)
 ##
 ##
 
-## Read stream gauge data from xlsx workbook 
+## Function to read stream gauge data from individual sheets in xlsx workbook 
 library(readxl) # required package for the following function
 read_excel_allsheets <- function(filename) {
   sheets <- readxl::excel_sheets(filename)
