@@ -78,7 +78,7 @@ gc()
 ##
 ##
 
-## Read stream gauge data from xlsx workbook 
+## Function to read stream gauge data from individual sheets in xlsx workbook 
 library(readxl) # required package for the following function
 read_excel_allsheets <- function(filename) {
   sheets <- readxl::excel_sheets(filename)

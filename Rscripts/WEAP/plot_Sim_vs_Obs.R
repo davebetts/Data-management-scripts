@@ -1,13 +1,6 @@
 rm(list=ls())
 gc()
 
-# set working directory to the location of the required files
-setwd("C:/Users/davebetts/Dropbox/PhD/WEAP/stream gauges/ForCalibration")
-setwd("C:/Users/davebetts/Dropbox/PhD/WEAP/stream gauges")
-setwd("C:/Users/Sarah/Documents/Dropbox/PhD/WEAP/stream gauges")
-dir()
-
-
 ############################################################################################
 ###                                                                                      ###
 ###     !!!             Climate change impacts along the Wasatch front                      ###
@@ -526,15 +519,6 @@ plo
 
 rm(list=ls())
 gc()
-
-# set working directory to the location of the required files
-setwd("C:/Users/davebetts/Dropbox/PhD/WEAP/stream gauges/ForCalibration")
-setwd("C:/Users/davebetts/Dropbox/PhD/WEAP/stream gauges")
-setwd("C:/Users/Sarah/Documents/Dropbox/PhD/WEAP/stream gauges")
-setwd("C:/Users/Sarah/Documents/Dropbox/PhD/WEAP/Data/Data_Processed/stream gauges")
-setwd("C:/Users/davebetts/Dropbox/PhD/WEAP/Data/Data_Processed/stream gauges")
-dir()
-
 
 ############################################################################################
 ###                                                                                      ###
