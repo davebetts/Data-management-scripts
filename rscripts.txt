@@ -1,0 +1,113 @@
+USGS_Retreive.R 
+- need to change name and archive in original WEAP folder
+- also need to modify and turn into a general use data management file
+-- some of the changes need to go into a new version of this file
+
+01 Whirlwind Tour of R.R
+02 An Introduction to R.R
+03 R Objects.R
+04 Graphics An Introduction.R
+05 Manipulating Data in R.R
+06 Classical Linear Models.R
+07 Nonlinear Regression.R
+08 Generalized Linear Models.R
+09 Generalized Additive Models.R
+10 Advanced Graphics Session.R
+11 Importing and Exporting.R
+11NOV14.R
+12 Mixed Effects Models.R
+13 Programming.R
+14 Neural Networks.R
+15 Tree-based models I.R
+16 Tree-based models II.R
+18Sep14_statRttest0.R
+18Sep14_statRttest1.R
+18Sep14_statRttest2.R
+20NOV14CategoricalAnalysis.R
+21Oct14ANOVABlock.R
+30OCT14_LogRegCont.R
+3_7Ex8.r
+4NOV14.R
+4_3Ex13.r
+4_4Ex14.R
+all_stat.R
+ApplesOranges.R
+ASillyAxisExample.r
+Assign1.R
+Assign1_tutorial.R
+Assignment3tutorial.R
+BasinTemps (deleted 3c9c9561dc4368923b37891521d2c111).R
+BasinTemps.R
+betts_hw1.r
+betts_hw2.r
+betts_hw6.r
+bibsplit.R
+climateSummaries_Basin2HUC10.r
+climate_background.R
+Climate_data_figures.R
+climate_stations_MesoWestAPI.r
+clim_band_noband.R
+compare_GoF.R
+countingdaysofdata_USGS.R
+crappyclimate.r
+DatesToFix.R
+dbf_processing.r
+divdata.R
+DO.R
+figures.r
+flowdatacleanup.r
+formatclimate.R
+gauges.R
+gaugesTesting (2).R
+gaugesTesting.R
+gauges_GOF.R
+gauges_GOF_WEAPg_USGSg.R
+gauges_plot.R
+gauges_read_usgs.R
+gauges_TMF.R
+gauges_WEAP_gauges.R
+gauges_WEAP_output (2).R
+gauges_WEAP_output.R
+GoF_stream.R
+GoF_stream_EF.R
+GoodnessOfFit (2).R
+GoodnessOfFit.R
+hw4.r
+hw5.r
+hw7.R
+hw8.R
+hw9.2.R
+hw9.R
+inclass.r
+infiltratrion.r
+listcreator.r
+lookforsource.R
+mod_selected_gauges.R
+nates_data.R
+PlotsToFix.R
+plotting_EF.R
+plot_Sim_g_vs_Obs.R
+plot_Sim_vs_Obs (2).R
+plot_Sim_vs_Obs.R
+Q.r
+qctypes.r
+repeated_values.r
+rscripts.txt
+Rwork.r
+savegaugesforWEAPReadFromFile.R
+scales.r
+snotel2columns.R
+snotel5.r
+snotel6.r
+snotelGoF.R
+snotelGoF_EF.R
+snotelGoF_redo.R
+snotel_single.R
+studyarea_summaries.R
+Temperatures.R
+unknownexample_plots.R
+USGS_Average.R
+WEAP_Nodes.R
+weatherapi.R
+windy.r
+zip.reg.script.R
