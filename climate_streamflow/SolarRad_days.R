@@ -1,8 +1,3 @@
-# Direct R to use the folder where the CSV files of my data has been saved
-# make sure the "/" slants in the right direction in file names
-setwd("C:/Users/davebetts/Dropbox/nate") 
-setwd("C:/Users/Sarah/My Documents/Dropbox/nate") 
-dir()
 rm(list=ls())
 gc()
 #############################################################################################
@@ -10,7 +5,7 @@ gc()
 ###                 Data site:                             ###
 ###          All data from:             ###
 ###                         David J. Betts - April 2015                                ###
-###                     ACWA Lab - Data Processing for Nate Mouzon                        ###
+###                              ACWA Lab - Data Processing                               ###
 #############################################################################################
 
 #############################################################################################
