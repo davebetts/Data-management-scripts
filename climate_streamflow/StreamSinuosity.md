@@ -67,8 +67,13 @@ return math.sqrt( math.pow( startPoint.X - endPoint.X, 2 ) + math.pow( startPoin
 ```
 !Length! / CalculateDistance( !Shape!)
 ```
+<<<<<<< HEAD
   * '!Length!' is the reach (channel) length.
   * 'CalculateDistance( !Shape!)' uses the formula in the 'Pre-Logic Script Code' text box to calculate downvalley length.  
+=======
+* '!Length!' is the reach (channel) length.
+* 'CalculateDistance( !Shape!)' uses the formula in the 'Pre-Logic Script Code' text box to calculate downvalley length.  
+>>>>>>> db65c79908b4c2ddba06365450e1cc0c43817b35
 
 6. Click 'Ok' and you're done.
 
