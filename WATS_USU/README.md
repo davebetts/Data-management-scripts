@@ -25,3 +25,23 @@ This script will summarize all of the raster files in the working directory into
 
 #### 3. 'dbf_processing.r'
 This script formats the .dbf files created in the previous step into the "ReadFromFile" format for WEAP.  The script processes all of the dbf files in the working directory.  The other climate variables will be ignored if they are placed in a subfolder.
+
+# Goodness of Fit comparisons of model simulations and observed values
+All of the scripts listed in this section use the [hydroGOF](https://cran.r-project.org/web/packages/hydroGOF/hydroGOF.pdf) package in R. 
+
+## Stream gage data
+### gauges.R
+_Archived script_
+The original version of the script I wrote to compare WEAP model output to observed values from multiple stream gages within the area of study.  This file has been broken down into segments and placed in the 'R' subfolder as references for data processing.
+
+The remaining files within this section automatically produce individual .png files plotting modeled vs. observed data for each selected gage.  This includes USGS stream gagues and snow telemetry (SNOTEL) gages.
+
+### GoF_stream.R
+The final version the script to compare WEAP model output to observed values from multiple stream gages.
+
+### snotelGOF.R
+This file is equivalent to 'GoF_stream.R', except it compares modeled snow water equivalents (SWE), with SNOTEL observations.
+
+Alternate and previous versions still need to be catalogued or discarded
+
+
