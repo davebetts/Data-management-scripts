@@ -41,17 +41,17 @@ In this example, the single line segment was divided into reaches of equal lengt
 
 Another suggested solution was to use a function called "points along a line", which would allow you to add points along a line at a distance that you specify.  <-- Needs confirmation
 
-Whether you use uniform reach lengths or not, you need to end up with a field in the attributes table that is a measure of the channel length.
+Whether you use uniform reach lengths or not, you need to end up with a field in the attributes table that is a measure of the reach (channel) lengths.
 
-## Add a new field, 'SinuosityIndex', to the attributes table of the segmented stream
-Within this field is where you will calculate the sinuosity index: SI = 'channel length'/'downvalley length'.  'channel length's are the reach lengths -- the values that were calculated and recorded in the field 'Length' in the attributes table in this example.
+## Add a new field, 'SinuosityIndex', to the stream layer's attributes table
+This is the field within which you will calculate the sinuosity index: SI = 'channel length'/'downvalley length'.  'channel length's are the reach lengths -- the values that were calculated and recorded in the field 'Length' in the attributes table in this example.
 
-## Calculate sinuosity index using channel and downvalley lengths.
+## Calculate sinuosity index using reach (channel) and downvalley lengths.
 SI values are calculated using the Field Calculator which can be accessed by right clicking on the desired field ('SinuosityIndex') within the attributes table.  Reach (channel) lengths are the numerators, and downvalley lengths are the denominators for SI.
 
 Downvalley lengths are the straight line distances between the starting and ending points of the reach segments.  Downvalley lengths were calculated using a method found in [this thread](https://geonet.esri.com/thread/106442), and were simultaneously added to the formulas to calculate SIs within the 'SinuosityIndex' field in the attributes table.
 
-1. Open the the Field Calculator window for 'SinuosityIndex':
+1. Right click on 'SinuosityIndex' and open the the the Field Calculator window
 2. Select the "Python" radio button
 3. Check the box "Show Codeblock"
 4. Enter in the following formula in the 'Pre-Logic Script Code' text box.  **Make sure you have TWO spaces** before the text in lines 2 and 3
