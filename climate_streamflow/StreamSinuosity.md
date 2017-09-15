@@ -5,11 +5,7 @@ This method uses the field calculator to calculate the sinuosity of each reach a
 ## Pre-processing of the original stream layer:
 ### Merge stream segments
 This step can be skipped if the stream layer is already subdivided into desirable reach segments.  
-<<<<<<< HEAD
 For this example, selected stream segments were merged to create a single line segment that spanned the entire length of the stream study.  
-=======
-For this example, the stream segments within the shape file were merged to create a single line segment that spanned the entire length of the stream study.  
->>>>>>> 8a15ec998b7e561ae02bed7613570f51e6cb6fff
 
 ### Division into stream segments
 Divide the stream into reaches, which can be uniform or not.  The lengths of each reach need to be recorded in _a new field_ in the attributes table, which was labled 'Length' in this example.  Reach lengths are a measure of the total channel length.
@@ -66,13 +62,13 @@ def CalculateDistance(shape):
  
 return math.sqrt( math.pow( startPoint.X - endPoint.X, 2 ) + math.pow( startPoint.Y - endPoint.Y, 2 ))
 ```
-* The lower text box is where you will execute the function.  In this example the text box is labeled 'SinuosityIndex = '.  
+  * The lower text box is where you will execute the function.  In this example the text box is labeled 'SinuosityIndex = '.  
 5. Enter the following formula for SI in the lower text box, and click 'OK'.
 ```
 !Length! / CalculateDistance( !Shape!)
 ```
-* '!Length!' is the reach (channel) length.
-* 'CalculateDistance( !Shape!)' uses the formula in the 'Pre-Logic Script Code' to calculate downvalley length.  
+  * '!Length!' is the reach (channel) length.
+  * 'CalculateDistance( !Shape!)' uses the formula in the 'Pre-Logic Script Code' text box to calculate downvalley length.  
 
 6. Click 'Ok' and you're done.
 
