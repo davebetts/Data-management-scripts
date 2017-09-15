@@ -12,3 +12,7 @@ Estimates of the maximum solar radiation were calulated based on:
   * quadratic regressions are calculated for each day of the year from the remaining available observations for that day.
 
 Additional details about this script are found here:  [Multiple iterations of quadratic regression in R](https://stackoverflow.com/questions/29982964/multiple-iterations-of-quadratic-regression-in-r)
+
+
+### Files in 'Coursework' folder
+Addition files in 'PhysHydro' and 'WQ_P' can be used to analyze streamflow and water quality data.  These files still need to be described in GitHub.
