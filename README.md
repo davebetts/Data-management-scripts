@@ -1,4 +1,4 @@
 # Data-management-scripts
-This repository contains R and Python scripts that djb has used to manage, edit, and analyze data.  Additional scripts were created following online tutorials.  
+This repository contains R and Python scripts that davebetts has used to manage, edit, and analyze data.  Additional scripts are also catalogued that were created following online tutorials.  
 
-Several scripts have been generalized in order to create template scripts for similar uses.
+Several scripts have been generalized from their specific use in order to create template scripts for similar needs.
