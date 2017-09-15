@@ -14,7 +14,8 @@ _Archived script_  This script is no longer used for the GSL_WEAP project.
 This script was replaced by the following three scripts: 'kriging_djb.py', 'zonaltables.py', 'dbf_processing.r'
 
 ### Kriging and zonal statistics
-Three scripts are required to complete the calculation of the average value per polygon, and format the data for use with WEAP.  
+Three scripts are required to complete the calculation of the average value per polygon, and format the data for use with WEAP.  I would like to combine these three scripts into a single file if possible and be able to process all of the climate variables with in a loop.
+
 #### 1. 'kriging_djb.py'
 This script has not been written to process all of the climate variables a once.  The value of the variable "shp" has to be selected for each shape file that needs to averaged.  The inputs for this process are shape files of gridded data created in ArcGIS with file names with this pattern: 'XY#####.shp'
 
