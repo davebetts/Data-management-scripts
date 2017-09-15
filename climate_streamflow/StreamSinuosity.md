@@ -11,7 +11,7 @@ Whether you use uniform reach lengths or not, you need to end up with a field in
 
 This field was labeled 'Length'.
 
-In this example, the single line segment was divided into reaches of equal lengths using the [Divide Line by Length](http://www.arcgis.com/home/item.html?id=d5d27ee47330434b9a96b91136a0118f) Add-in with ArcGIS 10.3.
+In this example, the single line segment was divided into reaches of equal lengths using the [Divide Line by Length](http://www.arcgis.com/home/item.html?id=d5d27ee47330434b9a96b91136a0118f) Add-in.  (The Add-in in this example worked with ArcGIS 10.3, in July of 2017)
 
 > **Divide Line By Length Add-in**
 > 
@@ -68,4 +68,3 @@ return math.sqrt( math.pow( startPoint.X - endPoint.X, 2 ) + math.pow( startPoin
 ```
 
 '!Length!' is the reach length or channel length field.  'CalculateDistance( !Shape!)' is the downvalley length.
-
