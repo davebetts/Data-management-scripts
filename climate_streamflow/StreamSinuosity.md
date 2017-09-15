@@ -54,7 +54,7 @@ Downvalley lengths are the straight line distances between the starting and endi
 1. Right click on 'SinuosityIndex' and open the the the Field Calculator window
 2. Select the "Python" radio button
 3. Check the box "Show Codeblock"
-4. Enter in the following formula in the 'Pre-Logic Script Code' text box.  **Make sure you have TWO spaces** before the text in line 2 and before line 3
+4. Enter in the following formula in the 'Pre-Logic Script Code' text box.  **Make sure you have TWO spaces** before the text in line 2 and before the text in line 3
 ```
 def CalculateDistance(shape):
   startPoint = shape.firstPoint
