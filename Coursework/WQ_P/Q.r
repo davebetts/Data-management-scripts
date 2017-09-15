@@ -1,12 +1,3 @@
-#### PC ####
-setwd("C:/Users/Sarah/Documents/Dropbox/PhD/Coursework/WaterQuality&Pollution/SmallGroupProjects")
-#cleaning up the space
-rm(list=ls())
-gc()
-
-#### lappy ####
-setwd("C:/Users/davebetts/Dropbox/PhD/Coursework/WaterQuality&Pollution/SmallGroupProjects")
-#cleaning up the space
 rm(list=ls())
 gc()
 

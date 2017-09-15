@@ -1,7 +1,3 @@
-# Direct R to use the folder where the CSV files of my data has been saved
-# make sure the "/" slants in the right direction in file names
-setwd("C:/Users/davebetts/Dropbox/PhD/Coursework/WaterQuality&Pollution/SmallGroupProjects") 
-
 #############################################################################################
 ###       Analysis of High Frequency Temperature Data on the Little Bear River            ###
 ###                 3 sites: South Fork, Paradise, Mendon Road                            ###
