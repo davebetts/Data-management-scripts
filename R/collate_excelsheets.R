@@ -3,48 +3,33 @@ gc()
 
 ############################################################################################
 ###                                                                                      ###
-###                  Climate change impacts along the Wasatch front                      ###
-###       (The Bear River, Weber River and "Provo - Jordan" River watersheds)            ###
-###                       A stream flow model using WEAP                                 ###
-###                                                                                      ###
+###          Aggregate worksheets from an Excel workbook into a single table             ###
 ###                          David J. Betts - July 2014                                  ###
-###                        Utah State University & iUTAH                                 ###
 ###                                                                                      ###
-###           Processing USGS stream gauge data and WEAP output for comparison           ###
-###      USGS stream data retrieved from: http://waterdata.usgs.gov/nwis/inventory       ###
-###                Required files for this script: "all_gaugedata.xlsx",                 ###
-###                "gauges_WEAPNodes.csv", "WEAP_output_m3_7_10_15.csv"                  ###
+###          USGS stream data retrieved from:                                            ###
+###                               http://waterdata.usgs.gov/nwis/inventory               ###
+###          Required files for this example:                                            ###
+###                            "all_gaugedata.xlsx", "gauges_WEAPNodes.csv"              ###
 ###                                                                                      ###
 ############################################################################################
-## !!! All erroneous stream flow observations should have been removed from the reported!!!
-## !!! data prior to processign with this script.  All quality control of stream gauge  !!!
-## !!! data should be done prior to this point!!!
-## 
-## The quality control done for USGS's daily average flows seems sufficient.  USGS gives 
-## estimates in some cases, such as when stream gauges were impaired by icy conditions. 
 ##
-## For the USGS stream gauge data, the necessary data columns are: USGS station ID, Date, 
-## Daily average flow (cfs).  The data processed with this script used Excel's default 
+## 'all_gaugedata.xlsx' contains between 40 and 50 worksheets containing daily average
+## streamflow data for USGS stream gages.  Each worksheet was labeled with the stream gage
+## IDs, which were used to create column names in the final table.  Column headers ("ID",
+## "Date", "cfs")  should be in the first row in each worksheet. Remove the additional rows
+## reported by USGS before using this script.
+##
+## The final table collates the columns: 'USGS station ID', 'Date', and 
+## 'Daily average flow (cfs)'.  The data processed with this script used Excel's default
 ## format for dates: "mm/dd/yyyy".
-## 
-## Column headers ("ID", "Date", "cfs")  should be in the first row in each worksheet. 
-## Remove the additional rows reported by USGS before using this script.
 ## 
 ## Additional stream gauge data can be added through the addition of new sheets within the
 ## "all_gaugedata.xlsx" workbook, and by adding a new row to "gauges_WEAPNodes.csv" which
 ## identifies the WEAP stream node that corresponds to the added stream gauge data.  
 ##
-## Alternative scenarios and additional outputs from updates to the WEAP model can be 
-## processed with this script.  Replace "WEAP_output_m3_7_10_15.csv" with the file name of 
-## the updated or additional data.  For saving the processed data, new file names should be
-## for the scenarios in WEAP.  Updates to the WEAP model (e.g. calibration) should use the 
-## file names as they are below.
-##
 ## Additional information regarding the files for the Bear-Weber-Jordan Climate model 
 ## can be found in "FileDescriptions.txt"
 ##
-##
-
 
 ###########################################################################################
 ###                           Read USGS stream gauge data                               ###
@@ -59,10 +44,6 @@ gc()
 ##
 ## Required files and objects: "all_gaugedata.xlsx", "gauge_IDs" (created previously)
 ##
-## The data columns necessary for analysis with this script are: USGS station ID, Date, 
-## and Daily average flow (cfs).  "mm/dd/yyyy" was the date format within the Excel
-## worksheets.  
-## 
 ## Removing any additional rows before the column headers and data tables is necessary in
 ## order to use this script.  
 ## 
