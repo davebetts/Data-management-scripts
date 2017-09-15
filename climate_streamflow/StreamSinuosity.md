@@ -62,18 +62,12 @@ def CalculateDistance(shape):
  
 return math.sqrt( math.pow( startPoint.X - endPoint.X, 2 ) + math.pow( startPoint.Y - endPoint.Y, 2 ))
 ```
-  * The lower text box is where you will execute the function.  In this example the text box is labeled 'SinuosityIndex = '.  
+* The lower text box is where you will execute the function.  In this example the text box is labeled 'SinuosityIndex = '.  
 5. Enter the following formula for SI in the lower text box, and click 'OK'.
 ```
 !Length! / CalculateDistance( !Shape!)
 ```
-<<<<<<< HEAD
-  * '!Length!' is the reach (channel) length.
-  * 'CalculateDistance( !Shape!)' uses the formula in the 'Pre-Logic Script Code' text box to calculate downvalley length.  
-=======
 * '!Length!' is the reach (channel) length.
 * 'CalculateDistance( !Shape!)' uses the formula in the 'Pre-Logic Script Code' text box to calculate downvalley length.  
->>>>>>> db65c79908b4c2ddba06365450e1cc0c43817b35
-
 6. Click 'Ok' and you're done.
 
