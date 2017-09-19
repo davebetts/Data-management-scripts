@@ -1,12 +1,6 @@
 rm(list=ls())
 gc()
 
-# set working directory to the location of the required files
-setwd("C:/Users/a01987147/Dropbox/PhD/WEAP/Data/Data_Processed/stream gauges")
-setwd("C:/Users/davebetts/Dropbox/PhD/WEAP/Data/Data_Processed/stream gauges")
-dir()
-
-
 ############################################################################################
 ###                                                                                      ###
 ###                  Unregulated Surface Flows for the Wasatch Range                     ###

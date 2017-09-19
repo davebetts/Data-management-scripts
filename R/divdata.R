@@ -1,7 +1,5 @@
 rm(list=ls())
 gc()
-setwd("C:/Users/davebetts/Dropbox/PhD/WEAP/Data/Data_Processed/Climate/climate_postGIS_preWEAP")
-dir()
 
 ## this file splits the output from ArcGIS.  ArcGIS averaged the climate data through spatial joins by HUC12 (plus a few divisions of HUC12)
 ## Each column (an individual HUC12) is paired with the rownames (dates) and saved as a two column CSV
@@ -85,7 +83,6 @@ divdata(filename)
 
 rm(list=ls())
 gc()
-setwd("C:/Users/davebetts/Dropbox/PhD/WEAP/Data/Data_Processed/Climate/climate_postGIS_preWEAP")
 dir()
 
 ## this file splits the output from ArcGIS.  ArcGIS averaged the climate data through spatial joins by HUC12 (plus a few divisions of HUC12)
