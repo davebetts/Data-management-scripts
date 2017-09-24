@@ -24,8 +24,8 @@ names(z) <- nxt
 nxt1<-unique(nxt)
 
 for(i in seq(1,length(climate_files),2)) {
-  w <- read.csv(climate_files[i], check.names = FALSE, row.names=1)
-  x <- read.csv(climate_files[i+1], check.names = FALSE, row.names=1)
+  w <- read.csv(climate_files[i], check.names = FALSE)
+  x <- read.csv(climate_files[i+1], check.names = FALSE)
   y = (x-w)/w
   z[[i]]<-y
 }
