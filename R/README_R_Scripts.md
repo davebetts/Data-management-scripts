@@ -6,6 +6,12 @@ This script reads individual worksheets in an Excel workbook using the package '
 
 This script was originally part of the file 'gauges.R'.  The development of the R package 'dataRetrieval' (USGS) and a better personal understanding of how work with the format of the original data files has made this chunk of code obsolete.  I'm preserving this code in case I recieve another large workbook that would be better served in a plain text format.
 
+## compare_5num_scenarios.R
+This file takes all of the 5 number summaries created in R and compares the differences bettween the historic and projected summaries, and places all of the files into a single table.
+
+## compare_5num_scenarios_multi.R
+This file takes all of the 5 number summaries created in R and compares the differences bettween the historic and projected summaries, and places all of the files into a individual tables.
+
 ## GoodnessofFit.R
 This file has the basic script for using the HydroGoF package.  This file needs to be run and to determine how much to keep. There are other (perhaps better) versions of these commands in the most recent version of GoF_stream.R
 
