@@ -5,6 +5,8 @@ gc()
 ###           Analysis of High Frequency DO Data on the Little Bear River                 ###
 ###                 3 sites: South Fork, Paradise, Mendon Road                            ###
 ###          All data from: http://littlebearriver.usu.edu/sites/Default.aspx             ###
+###                         David J. Betts - December 2014                                ###
+###                     Water Quality & Pollution (WATS 4530/6530)                        ###   
 #############################################################################################
 
 #############################################################################################
