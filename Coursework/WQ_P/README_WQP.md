@@ -25,3 +25,16 @@ These are early scripts in R for data processing (December 2014), but the concep
   * Initial formating of the raw data
   * Plotting the raw and summarized data
   * QC analysis and processing
+  
+# flowdatacleanup.r
+#### This script is archived to keep track of work done in Water Quality and Pollution (USU)
+This file was created to assist with quality control of raw streamflow data.  The script used the following set of criteria to search for potential errors.
+* Identify maxium and minimum values to determine if they are within reasonable boundaries
+  * the default value for NAs for these gauges was -99999
+* Count the number of times that the maximum and minimum values appear
+* Identify the most frequently repeated value
+  * Sensor reporting errors might include the repetition of a recent reading
+  * Sensor errors might record a default value when the instrument needs calibration
+
+Reproducibility - Low
+This script could be improved by creating a loop, instead of processing each file independantly.  Final decisions on which data points were likely to be errors was not standardized or recorded.  

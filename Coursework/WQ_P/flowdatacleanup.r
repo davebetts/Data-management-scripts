@@ -1,7 +1,20 @@
-rm(list=ls())
-gc()
-dir()
+#########################################################################################
+#                       Quality control of stream gage flow data                        #
+#                            David J. Betts - December 2014                             #
+#                   Water Quality and Pollution - Small Group project                   # 
+#########################################################################################
+##
+## This file was created to assist with quality control of raw streamflow data.  The script
+## used the following set of criteria to search for potential errors.
+# * Identify maxium and minimum values to determine if they are within reasonable boundaries
+#	* the default value for NAs for these gauges was -99999
+# * Count the number of times that the maximum and minimum values appear
+# * Identify the most frequently repeated value
+#	 * Sensor reporting errors might include the repetition of a recent reading
+#	 * Sensor errors might record a default value when the instrument needs calibration
 
+Reproducibility - Low
+This script could be improved by creating a loop, instead of processing each file independantly.  Final decisions on which data points were likely to be errors was not standardized or recorded.  
 ## downloaded flow data "USU-LBR-Mendon-USU44.csv" 
 ## deleted all columns in CSV except "DataValue" and "LocalDateTime"
 ## changed column names to "Qcfs" and "date"
@@ -110,6 +123,3 @@ QParadise0$date2=as.POSIXct(QParadise0$date) # paste "date" as a POSIXct column 
 summary(QParadise0) #check to see if "date" is considered as a date.
 plot(QParadise0$Qcfs~QParadise0$date2)
 #found a few sections of outliers that might be worth omitting, but overall data seems okay at this scale
-
-
-plot
